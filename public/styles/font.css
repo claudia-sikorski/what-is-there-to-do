@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Satisfy";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/public/fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url(/public/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/public/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: 500;
+  font-style: normal;
+  src: url(/public/fonts/Roboto-Medium.ttf);
+}
+
+body,
+button {
+  font-family: "Roboto";
+}

@@ -1,0 +1,11 @@
+{
+  "name": "what-is-there-to-do_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Claudia Sikorski",
+  "license": "ISC"
+}

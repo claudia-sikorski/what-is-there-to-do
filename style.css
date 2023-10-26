@@ -1,0 +1,133 @@
+@import url(/public/styles/font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--dark-blue);
+  font-family: "Roboto";
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+:root {
+  --dark-blue: #15133c;
+  --grey: #73777b;
+  --orange: #ec994b;
+  --light-grey: #f1eee9;
+}
+
+/* Add Tasks Section */
+
+#tasks {
+  height: 100vh;
+  width: 100vw;
+  background: url("public/images/business-desktop-with-office-elements.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#addTasks {
+  margin: 1rem 0;
+  width: 90vw;
+  background-color: var(--light-grey);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#addTasks h1 {
+  font-family: "Satisfy";
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: var(--dark-blue);
+}
+
+#addTasksForm {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#addTasksForm input {
+  display: block;
+  margin-right: 0.5rem;
+  width: 200px;
+  height: 38px;
+  background: transparent;
+  border: solid 1px var(--grey);
+  transition: all 0.3s ease;
+  padding: 0 15px;
+}
+
+#addTasksForm input:focus {
+  border-color: var(--dark-blue);
+}
+
+#addTasksForm label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: var(--light-grey);
+  padding: 0 10px;
+  color: var(--dark-blue);
+  font-family: "Roboto Light";
+  transition: all 0.3s ease;
+}
+
+#addTasksForm input:focus + label,
+#addTasksForm input:valid + label {
+  font-size: 11px;
+  top: -5px;
+}
+
+#addTasksForm input:focus + label {
+  color: var(--dark-blue);
+}
+
+#addTasksForm .submitButton {
+  background-color: var(--orange);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#addTasksForm .submitButton:hover,
+#addTasksForm .submitButton:focus {
+  background-color: #dd7c22;
+}
+
+/* View Tasks Section */
